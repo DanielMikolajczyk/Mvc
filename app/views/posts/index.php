@@ -25,8 +25,10 @@
             <div class="text-sm font-weight-bold">
               <span><?= $post->created_at ?></span>
               &#124;
-              <span class="text-primary-o">Planowanie</span>
+              <?php foreach($data['tags'][$iterator] as $tag): ?>
+              <span class="text-primary-o"><?= $tag ?></span>
               &#124;
+              <?php endforeach; ?>
               <span><?= $data['authors'][$iterator] ?></span>
               <?php if(isset($_SESSION['user_id'])): ?>
                 &#124;

@@ -4,24 +4,17 @@
 <main class="w-full">
   <div class="main-width mx-auto d-flex lg-flex-row my-5">
     <section class="blog flex-grow-1 lg-px-4">
-      <!-- Creaet article -->
+      <!-- Create article -->
         <form action="<?= URLROOT ?>/posts/store" method="POST">
           <div class="border text-center">
             <div class="text-primary-o font-weight-bold my-4">
               Wybierz tagi
               <div class="text-left ml-5">
-                <div>
-                  <input type="checkbox" name="tags[]" id="tag1" class="checkbox-o" value="1">
-                  <label for="tag1" class="label-o">Label</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="tags[]" id="tag2" class="checkbox-o">
-                  <label for="tag2" class="label-o">Label</label>
-                </div>
-                <div>
-                  <input type="checkbox" name="tags[]" id="tag3" class="checkbox-o">
-                  <label for="tag3" class="label-o">Label</label>
-                </div>
+                <?php foreach($data['tags'] as $tag): ?>
+                  <input type="checkbox" name="tags[]" id="<?= $tag->tag ?>" class="checkbox-o" value="<?= $tag->tag ?>">
+                  <label for="<?= $tag->tag ?>" class="label-o"><?= $tag->tag ?></label>
+                  <div></div>
+                <?php endforeach; ?>
               </div>
             </div>
             <div class="my-4">
