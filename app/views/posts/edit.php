@@ -9,20 +9,22 @@
         <div class="post-box">
           <div style="background: url('https://www.paniswojegoczasu.pl/wp-content/uploads/2021/03/ksiazka-czas-na-jezyki-dziewczyna.jpg') no-repeat; background-size: cover; background-position: center;" class="post-image w-full"></div>
           <h2 class="text-primary-o my-4">
-            <?= $data->title ?>
+            <?= $data['post']->title ?>
           </h2>
           <div class="text-sm font-weight-bold">
-            <span><?= $data->created_at ?></span>
+            <span><?= $data['post']->created_at ?></span>
             &#124;
-            &#124;
-            <span>
-              <button class="btn-primary-o">
-                <a href="<?= URLROOT ?>/posts/edit/<?= $data->id ?>">Edytuj</a>
-              </button>
+            <?php foreach($data['tags'] as $tag): ?>
+              <span class="text-primary-o"><?= $tag ?></span>
+              &#124;
+            <?php endforeach; ?>
+            <button class="btn-primary-o">
+              <a href="<?= URLROOT ?>/posts/edit/<?= $data['post']->id ?>">Edytuj</a>
+            </button>
           </div>
         </div>
         <p class="text-sm my-5">
-          <?= $data->body ?>
+          <?= $data['post']->body ?>
         </p>
       </article>
       <!-- End of articles -->

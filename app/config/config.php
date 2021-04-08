@@ -9,6 +9,6 @@ define('DB_PASS', 'mysql');
 
 //Roots
 define('APPROOT', dirname(__DIR__));
-define('URLROOT', 'http://localhost/ProjectsLaravel/MVC/blog');
+define('URLROOT', 'http://localhost/blog');
 
 define('APPNAME', 'Blog');
