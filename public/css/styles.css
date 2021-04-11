@@ -1,6 +1,5 @@
 /******Global styles (extend bootstrap)********/
 /* Text */
-
 .text-xsm{
   font-size: 0.8rem;
 }
@@ -126,11 +125,46 @@
   font-weight: bold;
 }
 
+/* Background images */
+.bg-img-contact{
+  background: linear-gradient(90deg, rgba(194, 187, 192, 0.73), rgba(41, 25, 37, 0.73)) ,url(../img/pexels-vlada-karpovich-4050315.jpg) no-repeat center;
+}
+
+/* opacity */
+.opacity-0
+{
+  opacity: 0;
+}
+.opacity-2
+{
+  opacity: 0.2;
+}
+.opacity-4
+{
+  opacity: 0.4;
+}
+.opacity-6
+{
+  opacity: 0.6;
+}
+.opacity-8
+{
+  opacity: 0.8;
+}
+.opacity-10
+{
+  opacity: 1;
+}
+
+/* z-index */
+.z-10{
+  z-index: 10;
+}
 
 /****** Navbar *******/
 .navbar-brand img{
-  width: 200px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 
 /****** Main *********/
@@ -149,6 +183,13 @@
 }
 .about-img{
   margin-top: 2rem;
+}
+.about img a{
+  position: absolute;
+}
+.about-img a img{
+  position: relative;
+  right: 75px;
 }
 
 @media(min-width: 992px){
@@ -171,4 +212,10 @@
   .main-width{
     width: 70vw;
   }
+}
+
+/***** Google maps *****/
+#map {
+  height: 400px;
+  width: 80%;
 }

@@ -48,21 +48,7 @@
       <?php endforeach; ?>
       <!-- End of articles -->
     </section>
-    <aside class="about mx-auto">
-      <div class="w-250px mx-auto about-img">
-        <a href="">
-          <img class=" w-250px h-250px" src="https://www.paniswojegoczasu.pl/wp-content/uploads/2016/06/ola-sidebar.jpg" alt="">
-        </a>
-      </div>
-        <p class="text-xsm mt-4">
-      Nazywam się Ola Budzyńska i jestem twórczynią Pani Swojego Czasu. Uczę kobiety zarządzania czasem, planowania, realizacji celów i biznesu online. Jestem przedsiębiorczynią, autorką #kursoksiążek, kursów online i e-booków, pomysłodawczynią Klubu Pań Swojego Czasu oraz właścicielką Przestrzeni Pełnej Czasu na krakowskim Kazimierzu.
-
-      Jako Naczelna Gangu realizuję z nim naszą misję – chcemy, żeby każda kobieta zarządzała czasem po swojemu i żyła w zgodzie ze swoimi wartościami.
-      </p>
-      <div>
-        <span class="text-primary-o text-sm">Zobacz mój zespół</span>
-      </div>
-    </aside>
+    <?php require_once APPROOT.'/views/includes/aside.php';?>
   </div>
 </main>
 
