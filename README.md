@@ -1,10 +1,10 @@
 <h1>
   Blog with implementation of MVC structure
 </h1>
-
 <br>
 Above you can find my journey to create a blog with implementation of the MVC design pattern. However, there is yet a lot to be done.
 <br>
+<h5> Any constructive criticism is appreciated ;) </h5>
 <h3>
   TODO list:
 </h3>
@@ -26,4 +26,3 @@ Above you can find my journey to create a blog with implementation of the MVC de
 </h3>
 Shop site<br>
 Careers site<br>
-
