@@ -8,13 +8,13 @@ Above you can find my journey to create a blog with implementation of the MVC de
 <h3>
   TODO list:
 </h3>
-~~Create a website design~~
-~~Make it responisve~~
-~~Create database connection~~
-~~Implement RESTful architecture~~
-~~User registration~~
-~~Create tags~~
-~~Implement google maps marker~~(development only)
+<s>Create a website design</s>
+<s>Make it responisve</s>
+<s>Create database connection</s>
+<s>Implement RESTful architecture</s>
+<s>User registration</s>
+<s>Create tags</s>
+<s>Implement google maps marker</s>(development only)
 >Create authentication middleware
 >Email verification
 >Contact via Email form
