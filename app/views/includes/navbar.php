@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light main-width mx-auto">
   <a class="navbar-brand" href="<?= URLROOT ?>/posts/index">
-    <img src="https://www.paniswojegoczasu.pl/wp-content/themes/psc/assets/gfx/pani_swojego_czasu-logo.svg" alt="">
+    <img src="<?= URLROOT ?>/public/img/logo.png" class="logo" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,13 +8,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto text-sm">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">O nas<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">O nas</a>
       </li>
-      <li class="nav-item active dropdown" id="blog-Li">
-        <a class="nav-link dropdown-toggle" href="#" id="blog-Dropdown">Blog</a>
+      <li class="nav-item dropdown" id="blog-Li">
+        <a class="nav-link dropdown-toggle" id="blog-Dropdown">Blog</a>
         <div id="blog-Menu" class="dropdown-menu" aria-labelledby="blog-Dropdown">
-          <a class="dropdown-item" href="#">Artykuły</a>
+          <a class="dropdown-item" href="<?= URLROOT ?>/blog/index">Artykuły</a>
           <a class="dropdown-item" href="#">Podcast</a>
           <a class="dropdown-item" href="#">Video</a>
         </div>
@@ -29,7 +29,7 @@
         <a class="nav-link" href="#">Kursy online</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Kontakt</a>
+        <a class="nav-link" href="<?= URLROOT ?>/contacts/index">Kontakt</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Praca</a>
